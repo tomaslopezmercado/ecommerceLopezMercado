@@ -5,7 +5,7 @@ const NavBar = () => {
             <nav>
                 <a href="#">"Nombre de tienda"</a>
                 
-                <a href="#">"Listado de categorias</a>
+                <a href="#">"Listado de categorias"</a>
             </nav>
         </header>
     )
