@@ -1,14 +1,32 @@
-const NavBar = () => {
-    return (
-        <header>
-            <h1>E-Commerce</h1>
-            <nav>
-                <a href="#">"Nombre de tienda"</a>
-                
-                <a href="#">"Listado de categorias"</a>
-            </nav>
-        </header>
-    )
-}
+import CartWidget from "./CartWidget";
 
-export default NavBar
+const NavBar = () => {
+  return (
+    <header>
+      
+      <nav>
+        <h1>E-Commerce</h1>
+        <ul class="nav justify-content-end">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">
+              Home 
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              Productos
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <CartWidget/>
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+    </header>
+  );
+};
+
+export default NavBar;
